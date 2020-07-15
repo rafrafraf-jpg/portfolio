@@ -1,0 +1,43 @@
+.top-area {
+    animation: flyinleft 2s;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .top-area {
+        flex-wrap: wrap;
+    }
+    .top-area > * {
+        flex: 1 1 50%;
+    }
+}   
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .top-area > * {
+        flex: 1 1 25%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .top-area {
+        flex-wrap: nowrap;
+    }
+    .top-area > * {
+        flex: 0 0 auto;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+
+@keyframes flyinleft {
+    from { opacity: 0; transform: translateX(30%) }
+    to   { opacity: 1; transform: translateX(0) }
+}
