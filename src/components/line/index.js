@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 
 export default class Line extends React.Component {
     render() {

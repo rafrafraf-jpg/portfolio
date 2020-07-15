@@ -8,6 +8,8 @@ import ProjectsText from './components/projects/text.js'
 
 import Top from './components/top'
 
+import Footer from './components/footer'
+
 export default function App() {
     const appStyle = {
         padding: '0% 7.5%',
@@ -15,6 +17,7 @@ export default function App() {
     }
 
     return (
+        <div style={{position: 'relative', height: 'fit-content'}}>
         <div className="App" style={appStyle}>
             <Heading />
 
@@ -24,6 +27,8 @@ export default function App() {
                 <ProjectsText />
                 <Projects />
             </div>
+        </div>
+        <Footer />
         </div>
     )
 }
