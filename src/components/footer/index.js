@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
                     <div style={{position: 'relative', top: '50%', transform: 'translateY(-50%)'}}>
                         <h2 className='footer-title'>repl.it</h2>
                         <p>Check out all my projects on repl.it</p>
-                        <button className='repl-button' onClicked={this.btnTapped}>@RAFRAFRAF</button>
+                        <button className='repl-button' onClick={this.btnTapped}>@RAFRAFRAF</button>
                     </div>
                 </div>
             </div>

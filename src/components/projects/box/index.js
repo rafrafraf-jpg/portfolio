@@ -31,7 +31,8 @@ export default class Box extends React.Component {
                     <img className='project-image front' src={image} alt={missing} style={{width: '20%', height: 'auto'}} />
                     <p style={{position: 'absolute', display: 'none', fontFamily: 'helvetica', fontWeight: 'bold', color: '#bbbbbb', left: 10}}>{this.props.head}</p>
 
-                    <div className='back' style={{backgroundImage: `url("${image2}")`}}>
+                    <div className='back'>
+                        <img src={image2} alt={missing} style={{width: 'auto', height: '100%'}} />
                     </div>
                 </div>
             </div>

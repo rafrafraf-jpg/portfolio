@@ -46,7 +46,7 @@ export default class ProjectsText extends React.Component {
                     Inside the rooms, the names of everyone online and offline are shown. There are also basic commands such as coloring text.
                     <br /><br />
                     The server is written in python using the Sanic library.
-                    <br /></div>} url='https://partychats.rafrafraf.repl.co' /> : null}
+                    <br /><br /></div>} url='https://partychats.rafrafraf.repl.co' /> : null}
                 </div>
             </div>
         )
