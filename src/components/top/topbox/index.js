@@ -1,6 +1,5 @@
 import React from 'react'
 import Line from '../.././line'
-import 'font-awesome/css/font-awesome.min.css';
 
 export default class TopBox extends React.Component {
     render() {
@@ -68,7 +67,7 @@ export default class TopBox extends React.Component {
                 </p>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Line width={40} />
-                    	<p style={{color: '#bbbbbb', margin: '0 0'}}><i className="fa fa-shield" aria-hidden="true"></i></p>
+                    	<p style={{color: '#bbbbbb', margin: '0 0'}}>*</p>
                     <Line width={40} />
                 </div>
                 <p style={{
