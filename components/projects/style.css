@@ -1,0 +1,104 @@
+.projects-area {
+    border-top: 1px solid #cccccc;
+    margin-left: 30px;
+    border-spacing:10px;
+    padding: 0 0;
+    animation: flyinup 2s;
+}
+
+.projects-text-area {
+    min-height: 400px;
+    height: fit-content;
+    border-top: 1px solid #cccccc;
+    padding: 0 0;
+    animation: flyinright 2s;
+}
+
+@keyframes flyinup {
+    from { opacity: 0; transform: translateY(30%) }
+    to   { opacity: 1; transform: translateY(0) }
+}
+
+@keyframes flyinright {
+    from { opacity: 0; transform: translateX(-100%) }
+    to   { opacity: 1; transform: translateX(0) }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .projects-area {
+        width: 50%;
+    }
+    .projects-area > .project-box {
+        display: block;
+        margin-top: 10px;
+    }
+    .project-image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40% !important;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .projects-area {
+        width: 60%;
+    }
+    .projects-area > .project-box {
+        float: left;
+        margin-left: 2%;
+        zoom: 0.6;
+    }
+    .projects-text-area {
+        width: 40%;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .projects-area > .project-box {
+        float: left;
+        margin-left: 2%;
+        zoom: 0.8;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .projects-area > .project-box {
+        float: left;
+        margin-left: 2%;
+        
+    }
+}
+
+.project-button {
+    background-color: transparent;
+    border: transparent;
+    font-family: helvetica;
+    color: #b9b8b8;
+    transition: all 0.1s ease-in-out;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 8px;
+}
+.project-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.project-button-open {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #aca9a9;
+}
